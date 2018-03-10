@@ -1,0 +1,196 @@
+	<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Hands-on-Hackathon CI/CD Tools</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Hands-on-Hackathon CI/CD Tools</h1>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+					# #hohcicd
+					</script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+# Thank you Sponsors
+
+- **mercedes-benz.io** for venue & food
+- **CircleCI** for on-site expert & swag
+- **GoCD** for on-site expert
+- **drone.io** for online expert
+- **GitLab** for T-Shirts & Stickers
+- **jfrog** for T-Shirts & Stickers
+				    </script>
+				</section>
+
+
+
+				<section data-markdown>
+					<script type="text/template">
+						<h1 style="font-size: 800%">Agenda</h1>
+					</script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+				        # Everything is up to you!
+				    </script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+						**11:00 - 11:15** - Let's get started, short introduction
+						Participants try out the internet connection (@Fabian for vouchers/password)
+						Everyone should be or have someone in Slack for communication
+
+						**11:15 - 11:45** - Short Introduction of each tool (6 tools x 5 minutes)
+						Tools will introduce themselves
+
+						**11:45 - 12:00** - Grouping People (one group for each tool)
+						People will be grouped somehow based on their priorities and the spreadsheet
+						Tool people can switch within the groups if there is more than one group of their tool
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**12:00 - 12:00** - End of food ordering
+						If someone is missed in the registration spreadsheet, they will need to eat leftovers :D
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**12:00 - 13:30** - Hacking I
+						* Create infrastructure
+						  * Build up necessary infrastructure on AWS
+						  * Build up the CI/CD tool on AWS:
+						    * @fabian for AWS credentials - 1 user per group → creates access for rest of the team
+						    * Please stay within your own VPC
+						    * Please stay evenly within eu-central-1 (Frankfurt) or eu-west-1 (Ireland) → some AWS limits have been raised
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**12:00 - 13:30** - Hacking I
+
+						* Connect components:
+						  * CI/CD tool
+						  * Github repository (@michaellihs for access)
+						  * Artifactory repository (@michaellihs for access)
+						  * Execution platform (create a test account on PWS - https://run.pivotal.io/- or something similar)
+
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**13:30 - 14:00** - Pizza & Drinks
+						After delivery arrives
+
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**14:00 - 17:30** - Hacking II
+						* Hackathon-Goal(s)
+						  * CICD-Build (possible, however far you get):
+						  * Get source code from Github
+						  * Build/Test/Save/Publish artifact
+						  * Promote artifact between different stages (DEV → INT → PROD)
+						* Hackathon-Result
+						  * Everything as code (as much as possible)
+						  * Document the rest in a README.md (please use English)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**17:30 - 19:00** - Presentation of results
+
+						* Depends on group count and tools (evenly between groups and or tools)
+						* Please describe challenges, dis-/advantages, comparison if possible
+						* Pushed to Github?
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Proposal
+
+						**19:00 - 21:00** - Networking or whatever
+
+						* Eat and drink up of the left-overs
+						* **Clean-up**
+						* Scattering into the bars around or whatever
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## More
+
+						* Dedicated Documenter / Team
+						  * Guaranteed swag for Documenter
+						  * push documentation to Github
+						* Please tweet :)
+						* Help us to clean up afterwards
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
